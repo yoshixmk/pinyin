@@ -34,7 +34,7 @@ $ pinyin
 ### showing help ###
 ```
 
-for developer (In progress):
+for developer:
 
 ```js
 import pinyin from "https://deno.land/x/pinyin/mod.ts";
