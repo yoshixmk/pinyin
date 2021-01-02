@@ -1,4 +1,3 @@
-// import  from "./deps.ts"
 import pinyin from "./deps.ts";
 import { parse } from "./deps.ts";
 import { version } from "./version.ts";
