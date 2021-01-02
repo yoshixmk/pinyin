@@ -13,6 +13,7 @@ if (isHelp) {
 -S, --segment, segmentation word to phrases
 -h, --heteronym, output heteronym pinyins
 -p, --separator <separator>, separator between words
+-d, --debug, display debug log
 `);
   Deno.exit(0);
 }
@@ -28,7 +29,9 @@ const options = {
   segment: args.segment || args.S || false,
 };
 
-console.dir(args);
+if (args.d || args.debug) {
+  console.dir(args);
+}
 
 const separator = args.separator ?? args.p ?? " ";
 const words = args._.join(" ");
